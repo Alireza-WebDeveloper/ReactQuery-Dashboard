@@ -61,16 +61,6 @@
       "price": 289.88
     },
     {
-      "id": 7,
-      "name": "MegaMax M2",
-      "description": "A plus-sized phone with a massive display and battery.",
-      "year_of_creation": 2021,
-      "rating": 4,
-      "views": 9800,
-      "country": "India",
-      "price": 399.75
-    },
-    {
       "id": 8,
       "name": "Zenith Z9",
       "description": "A luxury smartphone crafted with premium materials and craftsmanship.",
@@ -79,16 +69,6 @@
       "views": 5400,
       "country": "Italy",
       "price": 529.5
-    },
-    {
-      "id": 9,
-      "name": "RetroPhone R1",
-      "description": "A nostalgic throwback to classic cellphones, reimagined for the modern era.",
-      "year_of_creation": 2022,
-      "rating": 4.3,
-      "views": 3200,
-      "country": "Japan",
-      "price": 315
     }
   ]
 }

@@ -1,16 +1,16 @@
 import React from 'react';
 import { ProductState } from '../../../Model/Product';
 import * as Icons from 'react-icons/md';
-import useDeleteProduct from '../../../Hook/useDeleteProduct';
+
 interface CellsState {
   products: ProductState[];
+  handleSelectProductToDelete(product: ProductState): void;
 }
 
-const Cells: React.FC<CellsState> = ({ products }) => {
-  const { mutate: mutateDelete, status: statusDelete } = useDeleteProduct();
-  const handleAsyncDeleteProduct = (id: number) => {
-    mutateDelete(id);
-  };
+const Cells: React.FC<CellsState> = ({
+  products,
+  handleSelectProductToDelete,
+}) => {
   return (
     <tbody className="divide-y divide-gray-300">
       {products?.map((product) => (
@@ -30,7 +30,7 @@ const Cells: React.FC<CellsState> = ({ products }) => {
               </button>
               <button
                 className="px-3 py-1.5 bg-red-500 rounded-md capitalize hover:bg-orange-600"
-                onClick={() => handleAsyncDeleteProduct(product.id)}
+                onClick={() => handleSelectProductToDelete(product)}
               >
                 <Icons.MdDelete size="1.4rem" />
               </button>
