@@ -1,10 +1,10 @@
-import { QueryClient, useMutation } from '@tanstack/react-query';
+import { useQueryClient, useMutation } from '@tanstack/react-query';
 import { asyncDeleteProduct } from '../../StateManagment/Service/Product';
 import { toast } from 'react-toastify';
 import { toastOptions } from '../../Utils/Toast';
 
 const useDeleteProduct = () => {
-  const queryClient = new QueryClient();
+  const queryClient = useQueryClient();
   const { mutate, status } = useMutation({
     mutationFn: (id: number) => asyncDeleteProduct(id),
     onSuccess: () => {

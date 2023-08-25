@@ -89,26 +89,6 @@
       "views": 3200,
       "country": "Japan",
       "price": 315
-    },
-    {
-      "id": 10,
-      "name": "SwiftCell S10",
-      "description": "A phone designed for speed and efficiency, perfect for professionals.",
-      "year_of_creation": 2021,
-      "rating": 4.5,
-      "views": 5700,
-      "country": "Germany",
-      "price": 412.25
-    },
-    {
-      "id": 11,
-      "name": "Luna L7",
-      "description": "An innovative smartphone with a focus on AI and smart assistant integration.",
-      "year_of_creation": 2023,
-      "rating": 4.8,
-      "views": 7100,
-      "country": "South Korea",
-      "price": 512.3
     }
   ]
 }
