@@ -48,7 +48,7 @@
       "rating": 4.9,
       "views": 6200,
       "country": "France",
-      "price": 437.0
+      "price": 437
     },
     {
       "id": 6,
@@ -65,7 +65,7 @@
       "name": "MegaMax M2",
       "description": "A plus-sized phone with a massive display and battery.",
       "year_of_creation": 2021,
-      "rating": 4.0,
+      "rating": 4,
       "views": 9800,
       "country": "India",
       "price": 399.75
@@ -88,7 +88,7 @@
       "rating": 4.3,
       "views": 3200,
       "country": "Japan",
-      "price": 315.0
+      "price": 315
     },
     {
       "id": 10,
@@ -109,96 +109,6 @@
       "views": 7100,
       "country": "South Korea",
       "price": 512.3
-    },
-    {
-      "id": 12,
-      "name": "FireMobile F4",
-      "description": "A rugged phone built to withstand extreme conditions and environments.",
-      "year_of_creation": 2022,
-      "rating": 4.6,
-      "views": 4800,
-      "country": "United States",
-      "price": 398.99
-    },
-    {
-      "id": 13,
-      "name": "AquaPhone A3",
-      "description": "A waterproof and underwater-capable smartphone for aquatic adventurers.",
-      "year_of_creation": 2023,
-      "rating": 4.5,
-      "views": 3900,
-      "country": "Australia",
-      "price": 325.9
-    },
-    {
-      "id": 14,
-      "name": "ErgoMobile E1",
-      "description": "An ergonomic phone designed for comfort and reduced strain during use.",
-      "year_of_creation": 2021,
-      "rating": 4.2,
-      "views": 6900,
-      "country": "Sweden",
-      "price": 275.0
-    },
-    {
-      "id": 15,
-      "name": "Nova N5",
-      "description": "A budget-friendly smartphone with a focus on clean and intuitive software.",
-      "year_of_creation": 2023,
-      "rating": 4.0,
-      "views": 8200,
-      "country": "China",
-      "price": 365.6
-    },
-    {
-      "id": 16,
-      "name": "Titan T8",
-      "description": "A durable phone with a reinforced body, built for industrial use.",
-      "year_of_creation": 2022,
-      "rating": 4.3,
-      "views": 2800,
-      "country": "Germany",
-      "price": 298.75
-    },
-    {
-      "id": 17,
-      "name": "PixelPerfect P3",
-      "description": "A smartphone with an emphasis on display quality and color accuracy.",
-      "year_of_creation": 2021,
-      "rating": 4.7,
-      "views": 6200,
-      "country": "United States",
-      "price": 449.99
-    },
-    {
-      "id": 18,
-      "name": "Velo V2",
-      "description": "A phone designed for cyclists, with built-in fitness tracking and navigation.",
-      "year_of_creation": 2023,
-      "rating": 4.4,
-      "views": 3400,
-      "country": "France",
-      "price": 299.99
-    },
-    {
-      "id": 19,
-      "name": "Horizon H6",
-      "description": "A foldable smartphone with multitasking features for enhanced productivity.",
-      "year_of_creation": 2022,
-      "rating": 4.1,
-      "views": 4800,
-      "country": "South Korea",
-      "price": 599.0
-    },
-    {
-      "id": 20,
-      "name": "Xenon X1",
-      "description": "A gaming-centric smartphone with advanced cooling and performance optimization.",
-      "year_of_creation": 2021,
-      "rating": 4.9,
-      "views": 7400,
-      "country": "China",
-      "price": 569.75
     }
   ]
 }
