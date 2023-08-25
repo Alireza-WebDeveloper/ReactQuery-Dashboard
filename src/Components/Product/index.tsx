@@ -1,5 +1,6 @@
 import React from 'react';
 import { ProductState } from '../../Model/Product';
+import ProductTable from './ProductTable';
 
 interface ProductProps {
   products?: ProductState[];
@@ -13,6 +14,7 @@ const Product: React.FC<ProductProps> = ({ products }) => {
           List of all available products
         </h1>
       </section>
+      <ProductTable products={products} />
     </div>
   );
 };
