@@ -10,4 +10,13 @@ const asyncGetProduct = async (): Promise<ProductState[]> => {
   }
 };
 
-export { asyncGetProduct };
+const asyncDeleteProduct = async (id: number) => {
+  try {
+    const response = await BaseApi.delete(`/product/${id}`);
+    return response.data;
+  } catch (error: any) {
+    throw new Error(error.message);
+  }
+};
+
+export { asyncGetProduct, asyncDeleteProduct };
