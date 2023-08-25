@@ -19,4 +19,13 @@ const asyncDeleteProduct = async (id: number) => {
   }
 };
 
-export { asyncGetProduct, asyncDeleteProduct };
+const asyncUpdateProduct = async (product: ProductState) => {
+  try {
+    const response = await BaseApi.patch(`/product/${product.id}`, product);
+    return response.data;
+  } catch (error: any) {
+    throw new Error(error.message);
+  }
+};
+
+export { asyncGetProduct, asyncDeleteProduct, asyncUpdateProduct };

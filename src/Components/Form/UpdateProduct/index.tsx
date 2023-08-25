@@ -3,16 +3,11 @@ import { Formik, Form as Formik_Form } from 'formik';
 import FormikControl from '../FormikControl';
 import * as Yup from 'yup';
 import { ProductState } from '../../../Model/Product';
+import useUpdateProduct from '../../../Hook/useUpdateProduct';
+import { initialValuesState } from './Types';
+import { UpdateProductProps } from './Types';
 
-type initialValuesType = {
-  name: string;
-  description: string;
-  year_of_creation: number;
-  rating: number;
-  views: number;
-  country: string;
-  price: number;
-};
+// Validation
 const validationSchema = Yup.object().shape({
   name: Yup.string().required('this field is required'),
   description: Yup.string().required('this field is required'),
@@ -22,16 +17,12 @@ const validationSchema = Yup.object().shape({
   price: Yup.string().required('this field is required'),
 });
 
-interface UpdateProductProps {
-  statusDelete: any;
-  onClose(): void;
-  selectProduct: ProductState;
-}
 const UpdateProduct: React.FC<UpdateProductProps> = ({
   onClose,
   selectProduct,
 }) => {
-  const initialValues: initialValuesType = {
+  // Initial Values
+  const initialValues: initialValuesState = {
     name: selectProduct.name,
     description: selectProduct.description,
     year_of_creation: selectProduct.year_of_creation,
@@ -40,8 +31,12 @@ const UpdateProduct: React.FC<UpdateProductProps> = ({
     country: selectProduct.country,
     price: selectProduct.price,
   };
-  const handleSubmitForm = (values: Partial<ProductState>) => {
-    console.log(values);
+  // Async Action To Update Product
+  const { mutate, status } = useUpdateProduct();
+  const handleSubmitForm = (values: ProductState) => {
+    const newForm = { ...values, id: selectProduct.id };
+    mutate(newForm);
+    onClose();
     //
   };
   return (
@@ -106,6 +101,7 @@ const UpdateProduct: React.FC<UpdateProductProps> = ({
                 />
                 <section className="flex  gap-3">
                   <button
+                    disabled={status === 'loading' ? true : false}
                     type="submit"
                     className="bg-blue-500 capitalize w-full py-2 rounded-lg px-4 text-2xl text-white"
                   >
