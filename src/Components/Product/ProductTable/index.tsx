@@ -1,5 +1,4 @@
 import { ProductState } from '../../../Model/Product';
-import * as Icons from 'react-icons/md';
 import Rows from './Rows';
 import Cells from './Cells';
 interface ProductTableProps {
