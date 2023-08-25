@@ -38,6 +38,12 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
               leaveTo="opacity-0 scale-95"
             >
               <Dialog.Panel className="w-full max-h-[100vh] overflow-y-scroll transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <button
+                  className="px-1.5 py-1.5 rounded-full mb-3 hover:bg-cyan-500"
+                  onClick={onClose}
+                >
+                  <Icons.MdClose size="1.7rem" />
+                </button>
                 {title && (
                   <Dialog.Title
                     as="h3"
