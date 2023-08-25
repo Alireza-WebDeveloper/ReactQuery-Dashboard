@@ -81,7 +81,11 @@ const ProductTable: React.FC<ProductTableProps> = ({ products }) => {
         isOpen={isOpenUpdateModal}
         onClose={onCloseUpdateModal}
       >
-        <UpdateProduct onClose={onCloseUpdateModal} statusDelete={''} />
+        <UpdateProduct
+          selectProduct={selectProductToUpdate}
+          onClose={onCloseUpdateModal}
+          statusDelete={''}
+        />
       </Modal>
     </div>
   );

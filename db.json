@@ -29,16 +29,6 @@
       "views": 7500,
       "country": "Sweden",
       "price": 379.5
-    },
-    {
-      "id": 5,
-      "name": "Phantom P5",
-      "description": "A camera-centric phone designed for photography enthusiasts.",
-      "year_of_creation": 2023,
-      "rating": 4.9,
-      "views": 6200,
-      "country": "France",
-      "price": 437
     }
   ]
 }
