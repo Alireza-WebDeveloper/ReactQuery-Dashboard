@@ -31,16 +31,6 @@
       "price": 379.5
     },
     {
-      "id": 4,
-      "name": "NexGen N10",
-      "description": "A budget-friendly smartphone with surprisingly powerful features.",
-      "year_of_creation": 2021,
-      "rating": 4.2,
-      "views": 15000,
-      "country": "China",
-      "price": 350.22
-    },
-    {
       "id": 5,
       "name": "Phantom P5",
       "description": "A camera-centric phone designed for photography enthusiasts.",
@@ -49,16 +39,6 @@
       "views": 6200,
       "country": "France",
       "price": 437
-    },
-    {
-      "id": 6,
-      "name": "Solara S20",
-      "description": "A solar-powered smartphone that's perfect for outdoor adventurers.",
-      "year_of_creation": 2022,
-      "rating": 4.4,
-      "views": 3800,
-      "country": "Australia",
-      "price": 289.88
     }
   ]
 }

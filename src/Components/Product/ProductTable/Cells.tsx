@@ -5,11 +5,13 @@ import * as Icons from 'react-icons/md';
 interface CellsState {
   products: ProductState[];
   handleSelectProductToDelete(product: ProductState): void;
+  handleSelectProductToUpdate(product: ProductState): void;
 }
 
 const Cells: React.FC<CellsState> = ({
   products,
   handleSelectProductToDelete,
+  handleSelectProductToUpdate,
 }) => {
   return (
     <tbody className="divide-y divide-gray-300">
@@ -25,7 +27,10 @@ const Cells: React.FC<CellsState> = ({
           <td className="py-2 px-4">${product.price.toFixed(2)}</td>
           <td className="py-2 px-4">
             <section className="flex items-center gap-3 ">
-              <button className="px-3 py-1.5 bg-orange-500 rounded-md capitalize hover:bg-orange-600">
+              <button
+                className="px-3 py-1.5 bg-orange-500 rounded-md capitalize hover:bg-orange-600"
+                onClick={() => handleSelectProductToUpdate(product)}
+              >
                 <Icons.MdEdit size="1.4rem" />
               </button>
               <button

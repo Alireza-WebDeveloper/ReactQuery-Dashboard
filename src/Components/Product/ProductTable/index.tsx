@@ -5,33 +5,49 @@ import Modal from '../../Modal';
 import { useState } from 'react';
 import useDeleteProduct from '../../../Hook/useDeleteProduct';
 import DeleteProduct from '../../Form/DeleteProduct';
+import UpdateProduct from '../../Form/UpdateProduct';
 interface ProductTableProps {
   products?: ProductState[];
 }
 
 const ProductTable: React.FC<ProductTableProps> = ({ products }) => {
-  // States
-  const [isOpen, setIsOpen] = useState(false);
+  // State Modal
+  const [isOpenDeleteModal, setIsOpenDeleteModal] = useState(false);
+  const [isOpenUpdateModal, setIsOpenUpdateModal] = useState(false);
+
+  // State Select Product (Update,Delete)
   const [selectProductToDelete, setSelectProductToDelete] =
+    useState<ProductState>({} as ProductState);
+  const [selectProductToUpdate, setSelectProductToUpdate] =
     useState<ProductState>({} as ProductState);
 
   // Select Product To Delete
   const handleSelectProductToDelete = (product: ProductState) => {
     setSelectProductToDelete(product);
-    setIsOpen(true);
+    setIsOpenDeleteModal(true);
+  };
+
+  const handleSelectProductToUpdate = (product: ProductState) => {
+    setSelectProductToUpdate(product);
+    setIsOpenUpdateModal(true);
   };
 
   // Close Modal
-  const onClose = () => {
-    setIsOpen(false);
+  const onCloseDeleteModal = () => {
+    setIsOpenDeleteModal(false);
     setSelectProductToDelete({} as ProductState);
+  };
+
+  const onCloseUpdateModal = () => {
+    setIsOpenUpdateModal(false);
+    setSelectProductToUpdate({} as ProductState);
   };
 
   // Action Delete Product (Request)
   const { mutate: mutateDelete, status: statusDelete } = useDeleteProduct();
   const handleAsyncDeleteProduct = () => {
     mutateDelete(selectProductToDelete.id);
-    setIsOpen(false);
+    setIsOpenDeleteModal(false);
     setSelectProductToDelete({} as ProductState);
   };
   return (
@@ -43,21 +59,29 @@ const ProductTable: React.FC<ProductTableProps> = ({ products }) => {
             <Cells
               products={products}
               handleSelectProductToDelete={handleSelectProductToDelete}
+              handleSelectProductToUpdate={handleSelectProductToUpdate}
             />
           </>
         )}
       </table>
       {/* Modal */}
       <Modal
-        title="    Are you sure of removing the product?"
-        isOpen={isOpen}
-        onClose={onClose}
+        title="Are you sure of removing the product?"
+        isOpen={isOpenDeleteModal}
+        onClose={onCloseDeleteModal}
       >
         <DeleteProduct
-          onClose={onClose}
+          onClose={onCloseDeleteModal}
           handleAsyncDeleteProduct={handleAsyncDeleteProduct}
           statusDelete={statusDelete}
         />
+      </Modal>
+      <Modal
+        title="Are you sure of update the product?"
+        isOpen={isOpenUpdateModal}
+        onClose={onCloseUpdateModal}
+      >
+        <UpdateProduct onClose={onCloseUpdateModal} statusDelete={''} />
       </Modal>
     </div>
   );
