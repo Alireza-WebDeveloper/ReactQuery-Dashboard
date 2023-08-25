@@ -19,16 +19,6 @@
       "views": 9800,
       "country": "South Korea",
       "price": 529.99
-    },
-    {
-      "id": 3,
-      "name": "EcoMobile E3",
-      "description": "An eco-friendly phone with a focus on sustainability and longevity.",
-      "year_of_creation": 2023,
-      "rating": 8.3,
-      "views": 7500,
-      "country": "Sweden",
-      "price": 379.5
     }
   ]
 }
