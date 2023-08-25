@@ -28,4 +28,18 @@ const asyncUpdateProduct = async (product: ProductState) => {
   }
 };
 
-export { asyncGetProduct, asyncDeleteProduct, asyncUpdateProduct };
+const asyncCreateProduct = async (product: Partial<ProductState>) => {
+  try {
+    const response = await BaseApi.post(`/product`, product);
+    return response.data;
+  } catch (error: any) {
+    throw new Error(error.message);
+  }
+};
+
+export {
+  asyncGetProduct,
+  asyncDeleteProduct,
+  asyncUpdateProduct,
+  asyncCreateProduct,
+};

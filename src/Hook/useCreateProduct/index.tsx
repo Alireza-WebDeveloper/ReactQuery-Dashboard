@@ -7,9 +7,9 @@ import { ProductState } from '../../Model/Product';
 const useUpdateProduct = () => {
   const queryClient = useQueryClient();
   const { mutate, status } = useMutation({
-    mutationFn: (product: Partial<ProductState>) => asyncCreateProduct(product),
+    mutationFn: (product: ProductState) => asyncCreateProduct(product),
     onSuccess: () => {
-      toast.success('The create was successful', toastOptions);
+      toast.success('The update was successful', toastOptions);
       //   Revalidate Cached From Server Update
       queryClient.invalidateQueries({
         queryKey: ['product'],
