@@ -59,16 +59,6 @@
       "views": 3800,
       "country": "Australia",
       "price": 289.88
-    },
-    {
-      "id": 8,
-      "name": "Zenith Z9",
-      "description": "A luxury smartphone crafted with premium materials and craftsmanship.",
-      "year_of_creation": 2023,
-      "rating": 4.7,
-      "views": 5400,
-      "country": "Italy",
-      "price": 529.5
     }
   ]
 }
