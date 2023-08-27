@@ -11,26 +11,6 @@
       "price": 420.75
     },
     {
-      "id": 2,
-      "name": "Gizmo Galaxy Z",
-      "description": "A foldable smartphone that redefines flexibility and style.",
-      "year_of_creation": 2022,
-      "rating": 4.5,
-      "views": 9800,
-      "country": "South Korea",
-      "price": 529.99
-    },
-    {
-      "name": "samsung A51",
-      "description": "...",
-      "year_of_creation": 0,
-      "rating": 0,
-      "views": 0,
-      "country": "iraly",
-      "price": 150,
-      "id": 3
-    },
-    {
       "name": "sumsung A52",
       "description": "...",
       "year_of_creation": 2021,
@@ -41,24 +21,14 @@
       "id": 4
     },
     {
-      "name": "sumsung A53",
-      "description": "....",
-      "year_of_creation": 2022,
-      "rating": 5,
+      "name": "samsung A55",
+      "description": "good",
+      "year_of_creation": 2023,
+      "rating": 4.8,
       "views": 13000,
-      "country": "italy",
-      "price": 5000,
-      "id": 5
-    },
-    {
-      "name": "A54",
-      "description": "....",
-      "year_of_creation": 2024,
-      "rating": 5.3,
-      "views": 15000,
-      "country": "england",
-      "price": 0,
-      "id": 6
+      "country": "norway",
+      "price": 15000,
+      "id": 7
     }
   ]
 }
