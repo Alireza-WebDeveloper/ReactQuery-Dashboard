@@ -7,13 +7,12 @@ import { useSearchParams } from 'react-router-dom';
 interface FilterProductProps {}
 
 // InitialValue
-const initialValues: initialValuesState = {
-  price: 'asc',
-};
 
 const FilterProduct: React.FC<FilterProductProps> = () => {
   const [searchParam, setSearchParam] = useSearchParams();
-
+  const initialValues: initialValuesState = {
+    price: searchParam.get('_order') || 'asc',
+  };
   const handleSubmitForm = (values: initialValuesState) => {
     searchParam.set('_sort', 'price');
     searchParam.set('_order', values.price);
