@@ -3,6 +3,7 @@ import { ProductState } from '../../Model/Product';
 import ProductTable from './ProductTable';
 import Modal from '../Modal';
 import CreateProduct from '../Form/CreateProduct';
+import FilterProduct from '../Form/FilterProduct';
 
 interface ProductProps {
   products?: ProductState[];
@@ -23,6 +24,7 @@ const Product: React.FC<ProductProps> = ({ products }) => {
           List of all available products
         </h1>
       </section>
+      <FilterProduct />
       <ProductTable products={products} />
       <button
         onClick={onOpen}

@@ -2,7 +2,7 @@
   "product": [
     {
       "id": 1,
-      "name": "TechPhone Y",
+      "name": "TechPhone Y 12",
       "description": "The ultimate flagship smartphone with cutting-edge features.",
       "year_of_creation": 2023,
       "rating": 4.8,
@@ -19,16 +19,6 @@
       "views": 9800,
       "country": "South Korea",
       "price": 529.99
-    },
-    {
-      "name": "samsung A51",
-      "description": "best\n",
-      "year_of_creation": 2020,
-      "rating": 4.5,
-      "views": 12000,
-      "country": "italy",
-      "price": 15000,
-      "id": 3
     }
   ]
 }
