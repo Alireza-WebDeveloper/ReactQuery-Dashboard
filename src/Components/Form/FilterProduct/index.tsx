@@ -42,7 +42,7 @@ const FilterProduct: React.FC<FilterProductProps> = () => {
                 type="submit"
                 className="bg-orange-500 hover:bg-orange-600 capitalize w-full py-2 rounded-lg px-4 text-2xl text-white"
               >
-                search
+                sort
               </button>
             </section>
           </Formik_Form>
