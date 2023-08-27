@@ -8,10 +8,7 @@ interface FilterProductProps {}
 
 const FilterProduct: React.FC<FilterProductProps> = () => {
   const initialValues: initialValuesState = {
-    rating: 4,
-    views: 11000,
-    price: 10000,
-    year_of_creation: 2022,
+    price: 'asc',
   };
 
   const handleSubmitForm = (values: initialValuesState) => {
@@ -21,31 +18,20 @@ const FilterProduct: React.FC<FilterProductProps> = () => {
     <Formik initialValues={initialValues} onSubmit={handleSubmitForm}>
       {(FormikProps) => {
         return (
-          <Formik_Form className="flex flex-wrap  items-center gap-3 p-3 bg-gray-200 rounded-md ">
+          <Formik_Form className="flex flex-col space-y-5 bg-gray-300 p-4 rounded-md">
             <FormikControl
-              label="rating"
-              control="input"
-              name="rating"
-              type="number"
-            />
-            <FormikControl
-              label="views"
-              control="input"
-              name="views"
-              type="number"
-            />
-            <FormikControl
-              label="price"
-              control="input"
+              label="Choose how to sort products by price"
+              control="select"
               name="price"
-              type="number"
+              options={[
+                {
+                  value: 'asc',
+                  key: 'asc',
+                },
+                { value: 'desc', key: 'desc' },
+              ]}
             />
-            <FormikControl
-              label="year_of_creation"
-              control="input"
-              name="year_of_creation"
-              type="number"
-            />
+
             <section className="flex  w-full col-span-3 gap-3">
               <button
                 type="submit"
