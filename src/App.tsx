@@ -6,6 +6,7 @@ import queryClientStore from './StateManagment/Client';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AboutPage from './Pages/About';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

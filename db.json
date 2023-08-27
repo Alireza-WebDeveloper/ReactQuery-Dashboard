@@ -19,6 +19,46 @@
       "views": 9800,
       "country": "South Korea",
       "price": 529.99
+    },
+    {
+      "name": "samsung A51",
+      "description": "...",
+      "year_of_creation": 0,
+      "rating": 0,
+      "views": 0,
+      "country": "iraly",
+      "price": 150,
+      "id": 3
+    },
+    {
+      "name": "sumsung A52",
+      "description": "...",
+      "year_of_creation": 2021,
+      "rating": 10000,
+      "views": 11000,
+      "country": "italy",
+      "price": 12000,
+      "id": 4
+    },
+    {
+      "name": "sumsung A53",
+      "description": "....",
+      "year_of_creation": 2022,
+      "rating": 5,
+      "views": 13000,
+      "country": "italy",
+      "price": 5000,
+      "id": 5
+    },
+    {
+      "name": "A54",
+      "description": "....",
+      "year_of_creation": 2024,
+      "rating": 5.3,
+      "views": 15000,
+      "country": "england",
+      "price": 0,
+      "id": 6
     }
   ]
 }

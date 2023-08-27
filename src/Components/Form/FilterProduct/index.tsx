@@ -2,17 +2,22 @@ import React from 'react';
 import { Formik, Form as Formik_Form } from 'formik';
 import FormikControl from '../FormikControl';
 import { initialValuesState } from './Types';
-
+import { useSearchParams } from 'react-router-dom';
 // Types
 interface FilterProductProps {}
 
+// InitialValue
+const initialValues: initialValuesState = {
+  price: 'asc',
+};
+
 const FilterProduct: React.FC<FilterProductProps> = () => {
-  const initialValues: initialValuesState = {
-    price: 'asc',
-  };
+  const [searchParam, setSearchParam] = useSearchParams();
 
   const handleSubmitForm = (values: initialValuesState) => {
-    console.log(values);
+    searchParam.set('_sort', 'price');
+    searchParam.set('_order', values.price);
+    setSearchParam(searchParam);
   };
   return (
     <Formik initialValues={initialValues} onSubmit={handleSubmitForm}>

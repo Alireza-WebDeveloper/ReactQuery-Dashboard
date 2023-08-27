@@ -10,6 +10,17 @@ const asyncGetProduct = async (): Promise<ProductState[]> => {
   }
 };
 
+const asyncGetProductByFilter = async (value: any) => {
+  try {
+    const response = await BaseApi.get<ProductState[]>(
+      `/product?_sort=price&_order=${value}`
+    );
+    return response.data;
+  } catch (error: any) {
+    throw new Error(error.message);
+  }
+};
+
 const asyncDeleteProduct = async (id: number) => {
   try {
     const response = await BaseApi.delete(`/product/${id}`);
@@ -42,4 +53,5 @@ export {
   asyncDeleteProduct,
   asyncUpdateProduct,
   asyncCreateProduct,
+  asyncGetProductByFilter,
 };

@@ -5,6 +5,7 @@ import useGetProduct from '../../Hook/useGetProduct';
 
 const HomePage = () => {
   const { data, status } = useGetProduct();
+
   if (status === 'loading') return <Spinner />;
   if (status === 'error') return <Error />;
   return (
