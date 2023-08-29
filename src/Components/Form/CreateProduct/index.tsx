@@ -4,7 +4,7 @@ import FormikControl from '../FormikControl';
 import * as Yup from 'yup';
 import { ProductState } from '../../../Model/Product';
 import useCreateProduct from '../../../Hook/useCreateProduct';
-import { initialValuesState } from './Types';
+
 import { CreateProductProps } from './Types';
 
 // Validation
@@ -19,7 +19,7 @@ const validationSchema = Yup.object().shape({
 
 const CreateProduct: React.FC<CreateProductProps> = ({ onClose }) => {
   // Initial Values
-  const initialValues: initialValuesState = {
+  const initialValues: any = {
     name: '',
     description: '',
     year_of_creation: 0,
@@ -50,7 +50,7 @@ const CreateProduct: React.FC<CreateProductProps> = ({ onClose }) => {
           validationSchema={validationSchema}
           onSubmit={handleSubmitForm}
         >
-          {(FormikProps) => {
+          {() => {
             return (
               <Formik_Form className="flex flex-col space-y-10 p-7 rounded-lg">
                 <FormikControl

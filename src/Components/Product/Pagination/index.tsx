@@ -1,4 +1,3 @@
-import React from 'react';
 import { useSearchParams } from 'react-router-dom';
 import * as Icons from 'react-icons/md';
 import useGetProduct from '../../../Hook/useGetProduct';

@@ -11,7 +11,7 @@ const HomePage = () => {
 
   return (
     <div className="grid grid-cols-1">
-      {data?.length >= 1 ? (
+      {data && data?.length >= 1 ? (
         <Product products={data} />
       ) : (
         <p className="capitalize text-3xl text-center">

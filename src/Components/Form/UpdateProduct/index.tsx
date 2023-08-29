@@ -4,7 +4,6 @@ import FormikControl from '../FormikControl';
 import * as Yup from 'yup';
 import { ProductState } from '../../../Model/Product';
 import useUpdateProduct from '../../../Hook/useUpdateProduct';
-import { initialValuesState } from './Types';
 import { UpdateProductProps } from './Types';
 
 // Validation
@@ -22,7 +21,7 @@ const UpdateProduct: React.FC<UpdateProductProps> = ({
   selectProduct,
 }) => {
   // Initial Values
-  const initialValues: initialValuesState = {
+  const initialValues: any = {
     name: selectProduct.name,
     description: selectProduct.description,
     year_of_creation: selectProduct.year_of_creation,
@@ -54,7 +53,7 @@ const UpdateProduct: React.FC<UpdateProductProps> = ({
           validationSchema={validationSchema}
           onSubmit={handleSubmitForm}
         >
-          {(FormikProps) => {
+          {() => {
             return (
               <Formik_Form className="flex flex-col space-y-10 p-7 rounded-lg">
                 <FormikControl

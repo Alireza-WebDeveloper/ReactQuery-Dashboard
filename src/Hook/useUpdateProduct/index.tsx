@@ -1,8 +1,5 @@
 import { useQueryClient, useMutation } from '@tanstack/react-query';
-import {
-  asyncCreateProduct,
-  asyncUpdateProduct,
-} from '../../StateManagment/Service/Product';
+import { asyncUpdateProduct } from '../../StateManagment/Service/Product';
 import { toast } from 'react-toastify';
 import { toastOptions } from '../../Utils/Toast';
 import { ProductState } from '../../Model/Product';

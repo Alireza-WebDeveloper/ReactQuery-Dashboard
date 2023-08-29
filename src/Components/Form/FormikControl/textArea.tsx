@@ -6,7 +6,7 @@ type TextAreaProps = {
 };
 
 const TextArea: FC<TextAreaProps> = ({ otherProps }) => {
-  const { name, type, label } = otherProps;
+  const { name, label } = otherProps;
 
   return (
     <Field name={name}>
