@@ -11,24 +11,134 @@
       "price": 420.75
     },
     {
-      "name": "sumsung A52",
-      "description": "...",
-      "year_of_creation": 2021,
-      "rating": 10000,
-      "views": 11000,
-      "country": "italy",
-      "price": 12000,
-      "id": 4
+      "id": 8,
+      "name": "Gizmo X2",
+      "description": "A futuristic gadget with multi-functionality.",
+      "year_of_creation": 2022,
+      "rating": 4.5,
+      "views": 7500,
+      "country": "Japan",
+      "price": 600.99
     },
     {
-      "name": "samsung A55",
-      "description": "good",
+      "id": 9,
+      "name": "EcoTab",
+      "description": "An environmentally friendly tablet made from recycled materials.",
       "year_of_creation": 2023,
+      "rating": 4.2,
+      "views": 3000,
+      "country": "Germany",
+      "price": 299.5
+    },
+    {
+      "id": 10,
+      "name": "LuxeWatch 3K",
+      "description": "A luxury watch with advanced features and classic design.",
+      "year_of_creation": 2023,
+      "rating": 4.9,
+      "views": 5000,
+      "country": "Switzerland",
+      "price": 1500.25
+    },
+    {
+      "id": 11,
+      "name": "iPodify AirBuds",
+      "description": "Wireless earbuds with exceptional sound quality and comfort.",
+      "year_of_creation": 2022,
+      "rating": 4.7,
+      "views": 9000,
+      "country": "United States",
+      "price": 199.99
+    },
+    {
+      "id": 12,
+      "name": "SmartHome Hub X",
+      "description": "Central control hub for a modern and connected smart home.",
+      "year_of_creation": 2023,
+      "rating": 4.6,
+      "views": 6200,
+      "country": "Canada",
+      "price": 349
+    },
+    {
+      "id": 13,
+      "name": "GamerX Pro",
+      "description": "A gaming console designed for high-performance gaming experiences.",
+      "year_of_creation": 2022,
       "rating": 4.8,
-      "views": 13000,
-      "country": "norway",
-      "price": 15000,
-      "id": 7
+      "views": 8000,
+      "country": "South Korea",
+      "price": 549.75
+    },
+    {
+      "id": 14,
+      "name": "GreenCycle E-Bike",
+      "description": "An electric bike that promotes eco-friendly transportation.",
+      "year_of_creation": 2023,
+      "rating": 4.4,
+      "views": 4000,
+      "country": "Netherlands",
+      "price": 799
+    },
+    {
+      "id": 15,
+      "name": "HomeChef Master 5000",
+      "description": "A smart kitchen appliance for automated and gourmet home cooking.",
+      "year_of_creation": 2022,
+      "rating": 4.6,
+      "views": 6700,
+      "country": "France",
+      "price": 899.5
+    },
+    {
+      "id": 16,
+      "name": "Fashionista Wardrobe",
+      "description": "A smart wardrobe that helps you choose outfits and manage your clothes.",
+      "year_of_creation": 2023,
+      "rating": 4.5,
+      "views": 3800,
+      "country": "Italy",
+      "price": 699.99
+    },
+    {
+      "id": 17,
+      "name": "PowerGlow Solar Charger",
+      "description": "A portable solar charger for powering your devices on the go.",
+      "year_of_creation": 2022,
+      "rating": 4.3,
+      "views": 5600,
+      "country": "Australia",
+      "price": 129.95
+    },
+    {
+      "id": 18,
+      "name": "FitTrack Pro",
+      "description": "A fitness tracker that monitors various health metrics and workouts.",
+      "year_of_creation": 2023,
+      "rating": 4.7,
+      "views": 7200,
+      "country": "United Kingdom",
+      "price": 149
+    },
+    {
+      "id": 19,
+      "name": "BookWorm E-Reader",
+      "description": "An electronic reader for book lovers with a paper-like reading experience.",
+      "year_of_creation": 2022,
+      "rating": 4.5,
+      "views": 5800,
+      "country": "Sweden",
+      "price": 129.99
+    },
+    {
+      "id": 20,
+      "name": "PetPal Robot Companion",
+      "description": "An AI-powered robot that keeps your pet company and entertained.",
+      "year_of_creation": 2023,
+      "rating": 4.4,
+      "views": 3200,
+      "country": "Japan",
+      "price": 349.5
     }
   ]
 }

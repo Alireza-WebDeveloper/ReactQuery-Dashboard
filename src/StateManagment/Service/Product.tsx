@@ -1,25 +1,47 @@
 import { ProductState } from '../../Model/Product';
 import BaseApi from '../Base';
 
-const asyncGetProduct = async (): Promise<ProductState[]> => {
-  try {
-    const response = await BaseApi.get<ProductState[]>('/product');
-    return response.data;
-  } catch (error: any) {
-    throw new Error(error.message);
-  }
-};
+///  Options for Get Product
 
-const asyncGetProductByFilter = async (value: any) => {
+// Product By Pagination
+const asyncGetProductByPagination = async ({
+  page,
+  limit,
+}: {
+  page: number;
+  limit: number;
+}): Promise<ProductState[]> => {
   try {
     const response = await BaseApi.get<ProductState[]>(
-      `/product?_sort=price&_order=${value}`
+      `/product?_page=${page}&_limit=${limit}`
     );
     return response.data;
   } catch (error: any) {
     throw new Error(error.message);
   }
 };
+
+// Product By Pagination And Filter (Sort)
+const asyncGetProductByFilterAndPagination = async ({
+  order,
+  page,
+  limit,
+}: {
+  order: any;
+  page: any;
+  limit: any;
+}) => {
+  try {
+    const response = await BaseApi.get<ProductState[]>(
+      `/product?_sort=price&_order=${order}&_page=${page}&_limit=${limit}`
+    );
+    return response.data;
+  } catch (error: any) {
+    throw new Error(error.message);
+  }
+};
+
+/// Options for each product (Delete , Update , Create)
 
 const asyncDeleteProduct = async (id: number) => {
   try {
@@ -49,9 +71,9 @@ const asyncCreateProduct = async (product: Partial<ProductState>) => {
 };
 
 export {
-  asyncGetProduct,
+  asyncGetProductByPagination,
+  asyncGetProductByFilterAndPagination,
   asyncDeleteProduct,
   asyncUpdateProduct,
   asyncCreateProduct,
-  asyncGetProductByFilter,
 };
