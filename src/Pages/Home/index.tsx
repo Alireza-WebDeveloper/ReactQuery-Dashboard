@@ -8,9 +8,16 @@ const HomePage = () => {
 
   if (status === 'loading') return <Spinner />;
   if (status === 'error') return <Error />;
+  console.log(data);
   return (
     <div className="grid grid-cols-1">
-      <Product products={data} />
+      {data?.length >= 1 ? (
+        <Product products={data} />
+      ) : (
+        <p className="capitalize text-3xl text-center">
+          There is no product available
+        </p>
+      )}
     </div>
   );
 };

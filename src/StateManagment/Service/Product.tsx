@@ -1,9 +1,8 @@
 import { ProductState } from '../../Model/Product';
 import BaseApi from '../Base';
 
-///  Options for Get Product
-
 // Product By Pagination
+
 const asyncGetProductByPagination = async ({
   page,
   limit,

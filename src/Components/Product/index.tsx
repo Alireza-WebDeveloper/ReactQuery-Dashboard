@@ -4,6 +4,7 @@ import ProductTable from './ProductTable';
 import Modal from '../Modal';
 import CreateProduct from '../Form/CreateProduct';
 import FilterProduct from '../Form/FilterProduct';
+import Pagination from './Pagination';
 
 interface ProductProps {
   products?: ProductState[];
@@ -26,6 +27,7 @@ const Product: React.FC<ProductProps> = ({ products }) => {
       </section>
       <FilterProduct />
       <ProductTable products={products} />
+      <Pagination />
       <button
         onClick={onOpen}
         className="px-5 py-2.5 bg-blue-500 hover:bg-blue-600 capitalize text-xl"

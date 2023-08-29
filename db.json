@@ -11,134 +11,234 @@
       "price": 420.75
     },
     {
-      "id": 8,
-      "name": "Gizmo X2",
-      "description": "A futuristic gadget with multi-functionality.",
+      "id": 2,
+      "name": "SuperPhone X",
+      "description": "A revolutionary smartphone with advanced features and powerful performance.",
+      "year_of_creation": 2023,
+      "rating": 4.9,
+      "views": 9800,
+      "country": "Japan",
+      "price": 599.99
+    },
+    {
+      "id": 3,
+      "name": "SmartGadget Z",
+      "description": "An intelligent gadget with versatile functionalities for everyday use.",
       "year_of_creation": 2022,
       "rating": 4.5,
       "views": 7500,
-      "country": "Japan",
-      "price": 600.99
+      "country": "Germany",
+      "price": 199.5
+    },
+    {
+      "id": 4,
+      "name": "ProTab X",
+      "description": "A high-performance tablet for work and entertainment.",
+      "year_of_creation": 2023,
+      "rating": 4.7,
+      "views": 8900,
+      "country": "South Korea",
+      "price": 349.99
+    },
+    {
+      "id": 5,
+      "name": "VisionWatch S",
+      "description": "An innovative smartwatch with health monitoring features.",
+      "year_of_creation": 2022,
+      "rating": 4.6,
+      "views": 6200,
+      "country": "China",
+      "price": 179.0
+    },
+    {
+      "id": 6,
+      "name": "LuxeBook Air",
+      "description": "An ultra-slim laptop with exceptional performance and design.",
+      "year_of_creation": 2023,
+      "rating": 4.9,
+      "views": 11500,
+      "country": "United States",
+      "price": 1299.0
+    },
+    {
+      "id": 7,
+      "name": "SoundWave Plus",
+      "description": "A premium noise-canceling headphone with superior audio quality.",
+      "year_of_creation": 2022,
+      "rating": 4.7,
+      "views": 5400,
+      "country": "Sweden",
+      "price": 249.99
+    },
+    {
+      "id": 8,
+      "name": "MegaSpeaker XL",
+      "description": "A powerful wireless speaker for immersive sound experience.",
+      "year_of_creation": 2023,
+      "rating": 4.8,
+      "views": 7800,
+      "country": "Canada",
+      "price": 179.99
     },
     {
       "id": 9,
-      "name": "EcoTab",
-      "description": "An environmentally friendly tablet made from recycled materials.",
-      "year_of_creation": 2023,
-      "rating": 4.2,
-      "views": 3000,
-      "country": "Germany",
-      "price": 299.5
+      "name": "UltraCam 4K",
+      "description": "A compact action camera with stunning 4K video recording.",
+      "year_of_creation": 2022,
+      "rating": 4.4,
+      "views": 6900,
+      "country": "France",
+      "price": 199.0
     },
     {
       "id": 10,
-      "name": "LuxeWatch 3K",
-      "description": "A luxury watch with advanced features and classic design.",
+      "name": "FitPulse Pro",
+      "description": "An advanced fitness tracker with heart rate monitoring and GPS.",
       "year_of_creation": 2023,
-      "rating": 4.9,
-      "views": 5000,
-      "country": "Switzerland",
-      "price": 1500.25
+      "rating": 4.6,
+      "views": 8400,
+      "country": "United Kingdom",
+      "price": 129.99
     },
     {
       "id": 11,
-      "name": "iPodify AirBuds",
-      "description": "Wireless earbuds with exceptional sound quality and comfort.",
+      "name": "GigaDrive SSD",
+      "description": "A lightning-fast external SSD for seamless data storage.",
       "year_of_creation": 2022,
-      "rating": 4.7,
-      "views": 9000,
+      "rating": 4.9,
+      "views": 12500,
       "country": "United States",
-      "price": 199.99
+      "price": 249.0
     },
     {
       "id": 12,
-      "name": "SmartHome Hub X",
-      "description": "Central control hub for a modern and connected smart home.",
+      "name": "PureClean Robot",
+      "description": "An intelligent robot vacuum for automated cleaning.",
       "year_of_creation": 2023,
-      "rating": 4.6,
-      "views": 6200,
-      "country": "Canada",
-      "price": 349
+      "rating": 4.5,
+      "views": 7100,
+      "country": "South Korea",
+      "price": 299.0
     },
     {
       "id": 13,
       "name": "GamerX Pro",
-      "description": "A gaming console designed for high-performance gaming experiences.",
+      "description": "A high-performance gaming laptop for hardcore gamers.",
       "year_of_creation": 2022,
       "rating": 4.8,
-      "views": 8000,
-      "country": "South Korea",
-      "price": 549.75
+      "views": 9800,
+      "country": "Taiwan",
+      "price": 1699.0
     },
     {
       "id": 14,
-      "name": "GreenCycle E-Bike",
-      "description": "An electric bike that promotes eco-friendly transportation.",
+      "name": "HomeGuard 360",
+      "description": "A comprehensive smart security system for home protection.",
       "year_of_creation": 2023,
-      "rating": 4.4,
-      "views": 4000,
-      "country": "Netherlands",
-      "price": 799
+      "rating": 4.7,
+      "views": 8500,
+      "country": "United States",
+      "price": 399.99
     },
     {
       "id": 15,
-      "name": "HomeChef Master 5000",
-      "description": "A smart kitchen appliance for automated and gourmet home cooking.",
+      "name": "ChefMaster Pro",
+      "description": "An advanced kitchen appliance for professional chefs.",
       "year_of_creation": 2022,
       "rating": 4.6,
       "views": 6700,
-      "country": "France",
-      "price": 899.5
+      "country": "Italy",
+      "price": 349.0
     },
     {
       "id": 16,
-      "name": "Fashionista Wardrobe",
-      "description": "A smart wardrobe that helps you choose outfits and manage your clothes.",
+      "name": "UrbanRide E-Scooter",
+      "description": "A stylish electric scooter for urban commuting.",
       "year_of_creation": 2023,
       "rating": 4.5,
-      "views": 3800,
-      "country": "Italy",
-      "price": 699.99
+      "views": 7100,
+      "country": "France",
+      "price": 299.0
     },
     {
       "id": 17,
-      "name": "PowerGlow Solar Charger",
-      "description": "A portable solar charger for powering your devices on the go.",
+      "name": "HealthSync Watch",
+      "description": "A smartwatch with health and fitness tracking features.",
       "year_of_creation": 2022,
-      "rating": 4.3,
-      "views": 5600,
-      "country": "Australia",
-      "price": 129.95
+      "rating": 4.4,
+      "views": 5900,
+      "country": "United Kingdom",
+      "price": 149.0
     },
     {
       "id": 18,
-      "name": "FitTrack Pro",
-      "description": "A fitness tracker that monitors various health metrics and workouts.",
+      "name": "PhotoPro Camera",
+      "description": "A professional-grade digital camera for photography enthusiasts.",
       "year_of_creation": 2023,
-      "rating": 4.7,
-      "views": 7200,
-      "country": "United Kingdom",
-      "price": 149
+      "rating": 4.9,
+      "views": 10200,
+      "country": "Japan",
+      "price": 799.0
     },
     {
       "id": 19,
-      "name": "BookWorm E-Reader",
-      "description": "An electronic reader for book lovers with a paper-like reading experience.",
+      "name": "EcoBreeze Fan",
+      "description": "An energy-efficient fan with adjustable settings.",
       "year_of_creation": 2022,
-      "rating": 4.5,
-      "views": 5800,
-      "country": "Sweden",
-      "price": 129.99
+      "rating": 4.7,
+      "views": 7200,
+      "country": "Germany",
+      "price": 89.99
     },
     {
       "id": 20,
-      "name": "PetPal Robot Companion",
-      "description": "An AI-powered robot that keeps your pet company and entertained.",
+      "name": "AdventurePro Backpack",
+      "description": "A durable backpack with multiple compartments for adventurers.",
       "year_of_creation": 2023,
-      "rating": 4.4,
-      "views": 3200,
+      "rating": 4.6,
+      "views": 6800,
+      "country": "Canada",
+      "price": 149.0
+    },
+    {
+      "id": 21,
+      "name": "TravelMate Suitcase",
+      "description": "A stylish suitcase designed for frequent travelers.",
+      "year_of_creation": 2022,
+      "rating": 4.6,
+      "views": 5400,
+      "country": "United Kingdom",
+      "price": 159.99
+    },
+    {
+      "id": 22,
+      "name": "MusicFlow Earbuds",
+      "description": "Wireless earbuds with immersive sound and long battery life.",
+      "year_of_creation": 2023,
+      "rating": 4.8,
+      "views": 7100,
+      "country": "South Korea",
+      "price": 129.0
+    },
+    {
+      "id": 23,
+      "name": "GourmetChef Cookware Set",
+      "description": "A premium cookware set for professional chefs and home cooks.",
+      "year_of_creation": 2023,
+      "rating": 4.9,
+      "views": 8500,
+      "country": "France",
+      "price": 299.99
+    },
+    {
+      "id": 24,
+      "name": "ActiveFit Smartwatch",
+      "description": "A smartwatch designed for tracking fitness and health activities.",
+      "year_of_creation": 2022,
+      "rating": 4.5,
+      "views": 6200,
       "country": "Japan",
-      "price": 349.5
+      "price": 199.0
     }
   ]
 }
