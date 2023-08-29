@@ -8,7 +8,7 @@ const HomePage = () => {
 
   if (status === 'loading') return <Spinner />;
   if (status === 'error') return <Error />;
-  console.log(data);
+
   return (
     <div className="grid grid-cols-1">
       {data?.length >= 1 ? (
