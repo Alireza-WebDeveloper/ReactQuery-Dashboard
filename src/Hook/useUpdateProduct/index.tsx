@@ -9,7 +9,7 @@ const useUpdateProduct = () => {
   const { mutate, status } = useMutation({
     mutationFn: (product: ProductState) => asyncUpdateProduct(product),
     onSuccess: () => {
-      toast.success('The create was successful', toastOptions);
+      toast.success('The Update was successful', toastOptions);
       //   Revalidate Cached From Server Update
       queryClient.invalidateQueries({
         queryKey: ['product'],
