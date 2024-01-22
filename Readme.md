@@ -5,4 +5,6 @@
 
 
 
-Note : You Can CRUD With Pagination Data Table 
+# 1.Note : You Can CRUD With Pagination Data Table 
+# 2.Note : Cache Data When Change Route 
+
